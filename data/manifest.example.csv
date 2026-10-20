@@ -1,0 +1,5 @@
+image_path,sku_id,split,is_known,is_labeled,brand,brand_conf,product_line,product_line_conf,variant,variant_conf,volume,volume_conf,pack_count,pack_count_conf,packaging,packaging_conf,source,session_id
+catalog/coke_zero_330_001.jpg,coke_zero_330,labeled,1,1,Coca-Cola,1.0,Coca-Cola,1.0,Zero,1.0,330 ml,1.0,,0.0,can,1.0,catalog,catalog
+shelf/coke_zero_330_101.jpg,coke_zero_330,unlabeled,1,0,Coca-Cola,0.94,Coca-Cola,0.86,Zero,0.72,330 ml,0.61,,0.0,can,0.95,shelf,store01_day01
+shelf/coke_zero_500_001.jpg,coke_zero_500,unlabeled,0,0,Coca-Cola,0.91,Coca-Cola,0.88,Zero,0.65,500 ml,0.79,,0.0,bottle,0.93,shelf,store01_day02
+

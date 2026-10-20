@@ -1,0 +1,6 @@
+[console_scripts]
+retail-gcd = retail_gcd.train:main
+retail-gcd-estimate-k = retail_gcd.cli.estimate_k:main
+retail-gcd-eval = retail_gcd.cli.evaluate:main
+retail-gcd-extract = retail_gcd.cli.extract_features:main
+retail-gcd-validate = retail_gcd.manifest:main

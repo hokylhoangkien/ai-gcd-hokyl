@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-gcd"
+version = "0.1.0"
+description = "Reliability-aware attribute-guided generalized category discovery for retail SKU recognition"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "Pillow>=10.2",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "open-clip-torch>=2.24",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+retail-gcd = "retail_gcd.train:main"
+retail-gcd-validate = "retail_gcd.manifest:main"
+retail-gcd-eval = "retail_gcd.cli.evaluate:main"
+retail-gcd-extract = "retail_gcd.cli.extract_features:main"
+retail-gcd-estimate-k = "retail_gcd.cli.estimate_k:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+pythonpath = ["src"]
+
